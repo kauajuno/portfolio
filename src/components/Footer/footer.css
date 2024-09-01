@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.footer--link {
+  display: flex;
+  gap: 2px;
+  color: green;
+  text-decoration: underline;
+}
+
+.icon {
+  width: 6px;
+  height: 6px;
+}

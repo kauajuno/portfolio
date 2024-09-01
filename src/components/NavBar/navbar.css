@@ -1,6 +1,7 @@
 nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px;
 }
 
@@ -14,6 +15,22 @@ nav {
   display: none;
 }
 
+.about-me--item {
+  width: 20vw;
+  max-width: 240px;
+}
+
+.about-me--item h2 {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.about-me--item p {
+  font-family: "Inter", serif;
+  font-weight: 200;
+}
+
 #border {
   height: 1px;
   padding: 0 20%;
@@ -25,4 +42,28 @@ nav {
     rgba(201, 201, 201, 1) 80%,
     rgba(201, 201, 201, 0) 100%
   );
+}
+
+@media (min-width: 1024px) {
+  nav {
+    justify-content: space-between;
+    align-items: start;
+    padding: 32px;
+  }
+
+  #about-me {
+    display: flex;
+    gap: 16px;
+  }
+
+  .about-me--item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  #border {
+    display: none;
+  }
 }

@@ -1,0 +1,40 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  align-items: center;
+  gap: 14px;
+}
+
+.card-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  width: 100%;
+  max-width: 240px;
+  box-sizing: border-box;
+  border-radius: 40px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 240px;
+}
+
+.card-details--title {
+  font-family: "Lora";
+  font-style: italic;
+}
+
+.card-details--description {
+  font-weight: 200;
+}
+
+.card--border {
+  height: 1px;
+  width: 100%;
+}

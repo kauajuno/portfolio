@@ -1,8 +1,49 @@
 import React from "react";
+import "./home.css";
 import NavBar from "../../components/NavBar/NavBar";
+import Footer from "../../components/Footer/Footer";
+import Card from "../../components/Card/Card";
+
+import ReactLogo from "../../assets/React.svg";
+import ColonImage from "../../assets/colon.svg";
+import TargetImage from "../../assets/target.svg";
 
 const Home = () => {
-  return <NavBar />;
+  const theme = "#FC38B9";
+  const antitheme = "#2E924A";
+
+  return (
+    <>
+      <NavBar />
+      <section id="main-section">
+        <Card
+          backgroundColor="thematic"
+          img={ColonImage}
+          border={antitheme}
+          title="Sobre mim"
+          description="Kauã Júnio, 21 anos, 8º período em engenharia de software na UFG. Gosto de gatos e aprendo russo no tempo livre."
+          themeColor={theme}
+        />
+        <Card
+          backgroundColor="neutral"
+          img={ReactLogo}
+          border={antitheme}
+          title="Skills"
+          description="Sou designer UI/UX e desenvolvedor front-end em React."
+          themeColor={theme}
+        />
+        <Card
+          backgroundColor="thematic"
+          img={TargetImage}
+          border={antitheme}
+          title="Objetivos"
+          description="Busco minha primeira experiência profissional para expandir meus horizontes."
+          themeColor={theme}
+        />
+      </section>
+      <Footer />
+    </>
+  );
 };
 
 export default Home;
