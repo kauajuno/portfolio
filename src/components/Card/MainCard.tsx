@@ -1,5 +1,5 @@
 import React from "react";
-import "./card.css";
+import "./main-card.css";
 
 interface CardProps {
   backgroundColor: string;

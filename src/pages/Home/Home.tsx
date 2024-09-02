@@ -1,5 +1,5 @@
 import "./home.css";
-import Card from "../../components/Card/Card";
+import Card from "../../components/Card/MainCard";
 
 import ReactLogo from "../../assets/React.svg";
 import ColonImage from "../../assets/colon.svg";

@@ -1,0 +1,18 @@
+#contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 10vw;
+  height: 70vh;
+}
+
+@media (min-width: 1024px) {
+  #contact-section {
+    flex-direction: row;
+    max-width: none;
+    padding: 0 5vw;
+  }
+}

@@ -1,0 +1,45 @@
+.contact-button {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  color: #fc38b9;
+  background-color: #fff;
+  border: 2px solid #fc38b9;
+  border-radius: 16px;
+
+  width: 70%;
+  max-width: 300px;
+}
+
+.contact-button h2 {
+  font-weight: 600;
+  font-size: 22px;
+  font-family: "Lora", serif;
+  padding: 16px 0;
+}
+
+@media (min-width: 1024px) {
+  .contact-button {
+    height: 80%;
+    max-width: none;
+    width: 20%;
+    flex-grow: 1;
+    transition: flex-grow 0.5s;
+  }
+
+  .contact-button:hover {
+    flex-grow: 10;
+  }
+
+  .contact-icon {
+    width: 160px;
+    height: 160px;
+  }
+
+  .contact-button h2 {
+    display: none;
+  }
+}

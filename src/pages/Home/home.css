@@ -13,7 +13,6 @@
     gap: 12px;
     height: 75vh;
     transition: grid-template-columns 0.5s ease;
-    cursor: pointer;
   }
 
   #main-section:hover {
