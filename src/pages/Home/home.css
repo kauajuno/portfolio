@@ -5,3 +5,24 @@
   gap: 40px;
   align-items: center;
 }
+
+@media (min-width: 600px) {
+  #main-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 12px;
+    height: 75vh;
+    transition: grid-template-columns 0.5s ease;
+    cursor: pointer;
+  }
+
+  #main-section:hover {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  #main-section {
+    height: 60vh;
+  }
+}

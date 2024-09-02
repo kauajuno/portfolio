@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  height: 10vh;
 }
 
 #page-title {
@@ -49,6 +49,7 @@ nav {
     justify-content: space-between;
     align-items: start;
     padding: 32px;
+    height: auto;
   }
 
   #about-me {

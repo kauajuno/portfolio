@@ -1,22 +1,24 @@
 import "./App.css";
-import Home from "./pages/Home/Home.tsx";
+import Contact from "./pages/Contact/Contact";
+import Home from "./pages/Home/Home";
+import Projects from "./pages/Projects/Projects";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-const router = (
-  <Router>
-    <Routes>
-      <Route />
-    </Routes>
-  </Router>
-);
-
-console.log(router);
+import Footer from "./components/Footer/Footer"; // Assuming Footer is in components/Footer
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <Router>
+      <div>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

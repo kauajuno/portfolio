@@ -1,12 +1,9 @@
-import React from "react";
 import "./home.css";
-import NavBar from "../../components/NavBar/NavBar";
-import Footer from "../../components/Footer/Footer";
 import Card from "../../components/Card/Card";
 
 import ReactLogo from "../../assets/React.svg";
 import ColonImage from "../../assets/colon.svg";
-import TargetImage from "../../assets/target.svg";
+import TargetImage from "../../assets/splitTarget.svg";
 
 const Home = () => {
   const theme = "#FC38B9";
@@ -14,7 +11,6 @@ const Home = () => {
 
   return (
     <>
-      <NavBar />
       <section id="main-section">
         <Card
           backgroundColor="thematic"
@@ -41,7 +37,6 @@ const Home = () => {
           themeColor={theme}
         />
       </section>
-      <Footer />
     </>
   );
 };
