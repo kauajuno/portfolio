@@ -17,7 +17,8 @@ nav {
 
 .about-me--item {
   width: 20vw;
-  max-width: 240px;
+  max-width: 260px;
+  box-sizing: border-box;
 }
 
 .about-me--item h2 {
