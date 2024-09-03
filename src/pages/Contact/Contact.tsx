@@ -1,4 +1,4 @@
-import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import ContactCard from "../../components/Card/ContactCard";
@@ -8,9 +8,9 @@ const Contact = () => {
   return (
     <section id="contact-section">
       <ContactCard
-        link="https://github.com/kauajuno"
-        buttonText="GitHub"
-        buttonIcon={faGithub}
+        link="https://www.linkedin.com/in/kauajuno/"
+        buttonText="LinkedIn"
+        buttonIcon={faLinkedin}
       />
       <ContactCard
         link="mailto:kauajuno@gmail.com"
