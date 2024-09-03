@@ -1,0 +1,15 @@
+#page-wrapper {
+  position: relative;
+}
+
+#backward-arrow {
+  position: absolute;
+  top: 12vh;
+  left: 2vw;
+}
+
+@media (min-width: 1024px) {
+  #backward-arrow {
+    display: none;
+  }
+}
